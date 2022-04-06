@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple interest calculator</title>
+    </head>
+    <body onload="finishPage()">
+    	<div class="main">
+        <h2>Simple Interest Calculator</h2>
+
+        Amount <input type="number"  id="principal"> <br/>
+        Taux d'intérêt <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange=refreshCurseur()>  <span id="rateLabel">10.25%</span><br/>
+        No. of Years <select id="years"></select> <br/>
+        <span id="result"></span><br>
+
+        <button onclick="calculer()">Calculer Interet</button>
+        <span id="results"></span><br><br>
+        <footer>&copy; Everyone Can Get Rich</footer>
+        </div>
+    </body>
+</html>
